@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Reliable IP address detection
 ip=$(hostname -I | awk '{print $1}' )
 
 clear
@@ -16,7 +15,6 @@ echo "-------------------------------------------------------------"
 echo "Practical Offensive Industrial Cybersecurity Essentials - LAB"
 echo "-------------------------------------------------------------"
 
-# stop mqtt broker to avoid interference with other exercises
 sudo /etc/init.d/mosquitto stop > /dev/null 2>&1
 
 sleep 0.25
